@@ -10,7 +10,7 @@ import Foundation
 let pizzas = [
     Pizza(
         id: 1,
-        name: "Ветчина и грибы ",
+        name: "Ветчина и грибы",
         price: 345,
         description: "Ветчина,шампиньоны, увеличинная порция моцареллы, томатный соус"
     ),
