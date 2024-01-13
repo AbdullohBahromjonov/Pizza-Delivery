@@ -1,5 +1,5 @@
-### Pizza Delivery App 🍕
-#
+# Pizza Delivery App 🍕
+
 This is a Test Project for job application. Built only Menu Screen of the app. Using JSON Placeholder for making an api.
 
 Here is the api 🚀: https://my-json-server.typicode.com/AbdullohBahromjonov/FakeAPI/categories
