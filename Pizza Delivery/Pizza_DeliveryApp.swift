@@ -11,7 +11,7 @@ import SwiftUI
 struct Pizza_DeliveryApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }

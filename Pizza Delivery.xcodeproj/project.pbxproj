@@ -8,17 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		E578766B2B517BF00068E91C /* Pizza_DeliveryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578766A2B517BF00068E91C /* Pizza_DeliveryApp.swift */; };
-		E578766D2B517BF00068E91C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578766C2B517BF00068E91C /* ContentView.swift */; };
+		E578766D2B517BF00068E91C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578766C2B517BF00068E91C /* MainView.swift */; };
 		E578766F2B517BF30068E91C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E578766E2B517BF30068E91C /* Assets.xcassets */; };
 		E57876722B517BF30068E91C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E57876712B517BF30068E91C /* Preview Assets.xcassets */; };
+		E5B06DC62B52FA6F0010DD8A /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B06DC52B52FA6F0010DD8A /* Pizza.swift */; };
+		E5B06DC92B52FADC0010DD8A /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B06DC82B52FADC0010DD8A /* MenuView.swift */; };
+		E5B06DCB2B52FB020010DD8A /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B06DCA2B52FB020010DD8A /* BannerView.swift */; };
+		E5B06DCD2B52FB3B0010DD8A /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B06DCC2B52FB3B0010DD8A /* CategoriesView.swift */; };
+		E5B06DD32B52FBBF0010DD8A /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B06DD22B52FBBF0010DD8A /* Category.swift */; };
+		E5B06DD52B52FBEF0010DD8A /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B06DD42B52FBEF0010DD8A /* Categories.swift */; };
+		E5B06DD72B5300200010DD8A /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B06DD62B5300200010DD8A /* CategoryItem.swift */; };
+		E5B06DD92B5300780010DD8A /* Pizzas.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B06DD82B5300780010DD8A /* Pizzas.swift */; };
+		E5B06DDB2B53015B0010DD8A /* PizzaCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B06DDA2B53015B0010DD8A /* PizzaCardView.swift */; };
+		E5B06DDD2B5302650010DD8A /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B06DDC2B5302650010DD8A /* Banner.swift */; };
+		E5B06DDF2B5302940010DD8A /* Banners.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B06DDE2B5302940010DD8A /* Banners.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E57876672B517BF00068E91C /* Pizza Delivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pizza Delivery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E578766A2B517BF00068E91C /* Pizza_DeliveryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza_DeliveryApp.swift; sourceTree = "<group>"; };
-		E578766C2B517BF00068E91C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E578766C2B517BF00068E91C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E578766E2B517BF30068E91C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E57876712B517BF30068E91C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E5B06DC52B52FA6F0010DD8A /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
+		E5B06DC82B52FADC0010DD8A /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		E5B06DCA2B52FB020010DD8A /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		E5B06DCC2B52FB3B0010DD8A /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		E5B06DD22B52FBBF0010DD8A /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		E5B06DD42B52FBEF0010DD8A /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		E5B06DD62B5300200010DD8A /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
+		E5B06DD82B5300780010DD8A /* Pizzas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizzas.swift; sourceTree = "<group>"; };
+		E5B06DDA2B53015B0010DD8A /* PizzaCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaCardView.swift; sourceTree = "<group>"; };
+		E5B06DDC2B5302650010DD8A /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		E5B06DDE2B5302940010DD8A /* Banners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banners.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				E578766A2B517BF00068E91C /* Pizza_DeliveryApp.swift */,
-				E578766C2B517BF00068E91C /* ContentView.swift */,
+				E578766C2B517BF00068E91C /* MainView.swift */,
+				E5B06DC72B52FAC40010DD8A /* Menu Screen */,
 				E578766E2B517BF30068E91C /* Assets.xcassets */,
 				E57876702B517BF30068E91C /* Preview Content */,
 			);
@@ -65,6 +88,48 @@
 				E57876712B517BF30068E91C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E5B06DC72B52FAC40010DD8A /* Menu Screen */ = {
+			isa = PBXGroup;
+			children = (
+				E5B06DD12B52FBA30010DD8A /* View Model */,
+				E5B06DCF2B52FB8D0010DD8A /* Model */,
+				E5B06DCE2B52FB840010DD8A /* View */,
+			);
+			path = "Menu Screen";
+			sourceTree = "<group>";
+		};
+		E5B06DCE2B52FB840010DD8A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E5B06DC82B52FADC0010DD8A /* MenuView.swift */,
+				E5B06DCA2B52FB020010DD8A /* BannerView.swift */,
+				E5B06DCC2B52FB3B0010DD8A /* CategoriesView.swift */,
+				E5B06DD62B5300200010DD8A /* CategoryItem.swift */,
+				E5B06DDA2B53015B0010DD8A /* PizzaCardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E5B06DCF2B52FB8D0010DD8A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E5B06DC52B52FA6F0010DD8A /* Pizza.swift */,
+				E5B06DD22B52FBBF0010DD8A /* Category.swift */,
+				E5B06DDC2B5302650010DD8A /* Banner.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E5B06DD12B52FBA30010DD8A /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				E5B06DD42B52FBEF0010DD8A /* Categories.swift */,
+				E5B06DDE2B5302940010DD8A /* Banners.swift */,
+				E5B06DD82B5300780010DD8A /* Pizzas.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +202,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E578766D2B517BF00068E91C /* ContentView.swift in Sources */,
+				E5B06DDB2B53015B0010DD8A /* PizzaCardView.swift in Sources */,
+				E5B06DCB2B52FB020010DD8A /* BannerView.swift in Sources */,
+				E5B06DD52B52FBEF0010DD8A /* Categories.swift in Sources */,
+				E5B06DD32B52FBBF0010DD8A /* Category.swift in Sources */,
+				E578766D2B517BF00068E91C /* MainView.swift in Sources */,
+				E5B06DDD2B5302650010DD8A /* Banner.swift in Sources */,
+				E5B06DD72B5300200010DD8A /* CategoryItem.swift in Sources */,
+				E5B06DCD2B52FB3B0010DD8A /* CategoriesView.swift in Sources */,
+				E5B06DD92B5300780010DD8A /* Pizzas.swift in Sources */,
+				E5B06DC92B52FADC0010DD8A /* MenuView.swift in Sources */,
+				E5B06DC62B52FA6F0010DD8A /* Pizza.swift in Sources */,
+				E5B06DDF2B5302940010DD8A /* Banners.swift in Sources */,
 				E578766B2B517BF00068E91C /* Pizza_DeliveryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
