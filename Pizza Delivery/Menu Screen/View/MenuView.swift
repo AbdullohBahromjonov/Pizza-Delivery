@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct MenuView: View {
+    @EnvironmentObject var networking: Networking
+    
+    @State var selectedCategory = 0
+    
     var body: some View {
         ZStack {
             Color("Background")
@@ -28,27 +32,39 @@ struct MenuView: View {
                         
                         Section {
                             VStack(spacing: 1) {
-                                ForEach(pizzas) { pizza in
-                                    PizzaCardView(
-                                        name: pizza.name,
-                                        price: pizza.price,
-                                        description: pizza.description)
+                                if let loadedPizzas = networking.pizzas {
+                                    ForEach(loadedPizzas[selectedCategory].foods) { pizza in
+                                        PizzaCardView(
+                                            name: pizza.name,
+                                            img: pizza.img,
+                                            price: pizza.price,
+                                            description: pizza.description)
+                                    }
+                                } else {
+                                    ProgressView()
                                 }
                             }
                             .cornerRadius(25)
                         } header: {
-                            CategoriesView()
+                            CategoriesView(selectedCategory: $selectedCategory)
                                 .background(Color("Background"))
                         }
                     }
                 }
             }
         }
-        
+        .task {
+            do {
+                try await networking.fetchData()
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
     }
 }
 
 
 #Preview {
     MenuView()
+        .environmentObject(Networking())
 }

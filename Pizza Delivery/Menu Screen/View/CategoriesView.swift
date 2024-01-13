@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct CategoriesView: View {
-    @State var selectedCategory = "Пицца"
+    @EnvironmentObject var networking: Networking
+    
+    @Binding var selectedCategory: Int
     
     let columns = [
         GridItem(.flexible())
@@ -19,13 +21,15 @@ struct CategoriesView: View {
             LazyHGrid(
                 rows: columns,
                 content: {
-                    ForEach(categories) { category in
-                        CategoryItem(
-                            text: category.name,
-                            isActive: category.name == selectedCategory
-                        )
-                        .onTapGesture {
-                            selectedCategory = category.name
+                    if let loadedCategory = networking.pizzas {
+                        ForEach(loadedCategory) { category in
+                            CategoryItem(
+                                text: category.name,
+                                isActive: category.id == selectedCategory
+                            )
+                            .onTapGesture {
+                                selectedCategory = category.id
+                            }
                         }
                     }
                 }
@@ -38,6 +42,7 @@ struct CategoriesView: View {
 
 
 #Preview {
-    CategoriesView()
+    CategoriesView(selectedCategory: .constant(1))
+        .environmentObject(Networking())
 }
 

@@ -9,16 +9,27 @@ import SwiftUI
 
 struct PizzaCardView: View {
     let name: String
+    let img: String
     let price: Int
     let description: String
     
     var body: some View {
         HStack() {
-            Image("Pizza")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 132)
-                .padding(.trailing, 20)
+            AsyncImage(url: URL(string: img)) { img in
+                img
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 132)
+                    .padding(.trailing, 20)
+            } placeholder: {
+                ProgressView()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 132, height: 132)
+                    .background(
+                        RoundedRectangle(cornerRadius: 20)
+                            .foregroundColor(.gray.opacity(0.2))
+                    )
+            }
             
             VStack(alignment: .leading) {
                 Text(name)
@@ -56,5 +67,10 @@ struct PizzaCardView: View {
 
 
 #Preview {
-    PizzaCardView(name: "Ветчина и грибы", price: 345, description: "Ветчина,шампиньоны, увеличинная порция моцареллы, томатный соус")
+    PizzaCardView(
+        name: "Ветчина и грибы",
+        img: "https://img.freepik.com/premium-photo/isolated-pepperoni-pizza-with-salami_219193-8159.jpg?w=740",
+        price: 345,
+        description: "Ветчина,шампиньоны, увеличинная порция моцареллы, томатный соус"
+    )
 }

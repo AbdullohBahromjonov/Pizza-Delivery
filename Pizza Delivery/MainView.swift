@@ -61,6 +61,7 @@ struct MainView: View {
 
 #Preview {
     MainView()
+        .environmentObject(Networking())
 }
 
 
