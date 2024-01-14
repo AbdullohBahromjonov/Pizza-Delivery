@@ -39,12 +39,8 @@ struct CategoriesView: View {
             .padding(.horizontal)
         }
         .padding(.bottom, 15)
-        .task {
-            do {
-                try await networking.fetchData()
-            } catch {
-                print(error.localizedDescription)
-            }
+        .onAppear {
+            networking.fetchData()
         }
     }
 }

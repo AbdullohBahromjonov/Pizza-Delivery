@@ -53,12 +53,8 @@ struct MenuView: View {
                 }
             }
         }
-        .task {
-            do {
-                try await networking.fetchData()
-            } catch {
-                print(error.localizedDescription)
-            }
+        .onAppear {
+            networking.fetchData()
         }
     }
 }
