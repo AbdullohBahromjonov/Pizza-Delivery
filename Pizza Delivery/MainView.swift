@@ -21,8 +21,8 @@ struct MainView: View {
                     .tag(1)
                     .tabItem {
                         VStack {
-                            Image(systemName: "takeoutbag.and.cup.and.straw.fill")
-                            Text("Menu")
+                            Image("Menu")
+                            Text("Меню")
                         }
                     }
                 
@@ -30,18 +30,17 @@ struct MainView: View {
                     .tag(2)
                     .tabItem {
                         VStack {
-                            Image(systemName: "mappin.circle")
-                            Text("Contacts")
+                            Image("Pin")
+                            Text("Контаты")
                         }
                     }
-
                 
                 Text("Profile view")
                     .tag(3)
                     .tabItem {
                         VStack {
-                            Image(systemName: "person.fill")
-                            Text("Profile")
+                            Image("Person")
+                            Text("Пофиль")
                         }
                     }
                 
@@ -49,8 +48,8 @@ struct MainView: View {
                     .tag(3)
                     .tabItem {
                         VStack {
-                            Image(systemName: "cart.fill")
-                            Text("Cart")
+                            Image("Cart")
+                            Text("Корзина")
                         }
                     }
             }

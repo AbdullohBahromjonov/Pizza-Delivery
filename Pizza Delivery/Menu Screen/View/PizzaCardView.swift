@@ -27,7 +27,7 @@ struct PizzaCardView: View {
                     .frame(width: 132, height: 132)
                     .background(
                         RoundedRectangle(cornerRadius: 20)
-                            .foregroundColor(.gray.opacity(0.2))
+                            .foregroundColor(Color("Background"))
                     )
             }
             

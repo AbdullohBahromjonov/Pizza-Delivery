@@ -27,6 +27,7 @@ struct CategoryItem: View {
                 }
             }
             .foregroundStyle(.pink)
+            .opacity(isActive ? 1 : 0.4)
     }
 }
 

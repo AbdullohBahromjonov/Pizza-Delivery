@@ -14,9 +14,3 @@ struct Food: Identifiable, Decodable {
     let price: Int
     let description: String
 }
-
-struct Category: Identifiable, Decodable {
-    let id: Int
-    let name: String
-    let foods: [Food]
-}

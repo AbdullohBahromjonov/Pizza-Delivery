@@ -32,13 +32,13 @@ struct MenuView: View {
                         
                         Section {
                             VStack(spacing: 1) {
-                                if let loadedPizzas = networking.pizzas {
-                                    ForEach(loadedPizzas[selectedCategory].foods) { pizza in
+                                if let loadedPizzas = networking.foods {
+                                    ForEach(loadedPizzas[selectedCategory].foods) { food in
                                         PizzaCardView(
-                                            name: pizza.name,
-                                            img: pizza.img,
-                                            price: pizza.price,
-                                            description: pizza.description)
+                                            name: food.name,
+                                            img: food.img,
+                                            price: food.price,
+                                            description: food.description)
                                     }
                                 } else {
                                     ProgressView()

@@ -21,14 +21,16 @@ struct CategoriesView: View {
             LazyHGrid(
                 rows: columns,
                 content: {
-                    if let loadedCategory = networking.pizzas {
+                    if let loadedCategory = networking.foods {
                         ForEach(loadedCategory) { category in
                             CategoryItem(
                                 text: category.name,
                                 isActive: category.id == selectedCategory
                             )
                             .onTapGesture {
-                                selectedCategory = category.id
+                                withAnimation {
+                                    selectedCategory = category.id
+                                }
                             }
                         }
                     }
@@ -37,12 +39,19 @@ struct CategoriesView: View {
             .padding(.horizontal)
         }
         .padding(.bottom, 15)
+        .task {
+            do {
+                try await networking.fetchData()
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
     }
 }
 
 
 #Preview {
-    CategoriesView(selectedCategory: .constant(1))
+    CategoriesView(selectedCategory: .constant(0))
         .environmentObject(Networking())
 }
 

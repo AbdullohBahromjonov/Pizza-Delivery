@@ -24,8 +24,11 @@ struct BannerView: View {
                     }
                 }
             )
-            .frame(height: 112)
+            .frame(height: 130)
+            .scrollTargetLayout()
         }
+        .scrollTargetBehavior(.viewAligned)
+        .safeAreaPadding(.horizontal, 10)
     }
 }
 
